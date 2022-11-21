@@ -4,7 +4,8 @@
   width: 5.5rem;
   height: 5.5rem;
   border: 1px solid #ececec;
-  background-color: #2cc427;
+  /* background-color: #2cc427; */
+  background-image: linear-gradient(to top left, #28b487, #7dd56f);
   color: white;
   border-radius: 12px;
   align-items: center;
