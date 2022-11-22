@@ -54,7 +54,7 @@ const ExpenseForm = (props) => {
       date: new Date(enteredDate),
     };
 
-    props.onSaveExpenseDate(expenseData);
+    props.onSaveExpenseData(expenseData);
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
@@ -94,6 +94,9 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button onClick={props.onCancel} type="button">
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
         {/* We can add Click event to this button, but this would not be a best way of listing here. Becuase inded a default behaviour in built into a browser and built-into a forms on webpages. If a button especially with type sumbit is pressed inside of a form, the overall form element emit an event, which we can listen. therfore we will add event(onSubmit) to the form instead of button. But, this default behaviou reloads the page everytime the event happens/button clicked. To prevent that will have to use event.preventDefault() */}
       </div>
