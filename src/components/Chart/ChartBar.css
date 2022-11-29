@@ -10,7 +10,7 @@
   width: 100%;
   border: 1px solid #313131;
   border-radius: 12px;
-  background-color: #abe5c6;
+  background-color: #dee6e0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,8 @@
 }
 
 .chart-bar__fill {
-  background-color: #28b487;
+  /* background-color: #4fbda7; */
+  background-image: linear-gradient(to top left, #28b487, #7dd56f);
   width: 100%;
   transition: all 0.3s ease-out;
 }

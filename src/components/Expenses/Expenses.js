@@ -33,24 +33,24 @@ function Expenses(props) {
 
   return (
     <div>
-      <li>
-        <Card className="expenses">
-          <ExpensesFilter
-            selected={filteredYear}
-            onChangeFilter={filterChangeHandler}
-          />
+      {/* <li> */}
+      <Card className="expenses">
+        <ExpensesFilter
+          selected={filteredYear}
+          onChangeFilter={filterChangeHandler}
+        />
 
-          <ExpensesChart expenses={filteredExpenses} />
+        <ExpensesChart expenses={filteredExpenses} />
 
-          {/* Way-4 : adding new component ExpensesList.js */}
-          <ExpensesList items={filteredExpenses} />
+        {/* Way-4 : adding new component ExpensesList.js */}
+        <ExpensesList items={filteredExpenses} />
 
-          {/* Way-3 */}
-          {/* {expensesContent} */}
+        {/* Way-3 */}
+        {/* {expensesContent} */}
 
-          {/* Way-2 */}
+        {/* Way-2 */}
 
-          {/* {filteredExpenses.length === 0 && <p>No expenses found!</p>}
+        {/* {filteredExpenses.length === 0 && <p>No expenses found!</p>}
         {filteredExpenses.length > 0 &&
           filteredExpenses.map((expense) => (
             <ExpenseItem
@@ -61,9 +61,9 @@ function Expenses(props) {
             />
           ))} */}
 
-          {/* Way-1 */}
+        {/* Way-1 */}
 
-          {/* {filteredExpenses.length === 0 ? (
+        {/* {filteredExpenses.length === 0 ? (
           <p>No expenses found!</p>
         ) : (
           filteredExpenses.map((expense) => (
@@ -75,8 +75,8 @@ function Expenses(props) {
             />
           ))
         )} */}
-        </Card>
-      </li>
+      </Card>
+      {/* </li> */}
     </div>
   );
 }
